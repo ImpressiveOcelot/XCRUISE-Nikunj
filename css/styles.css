@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.navbar {
+    background-color: rgb(0, 0, 51);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.logo {
+    height: 80px;
+    width: 80px;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.menu {
+    display: flex;
+    gap: 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    height: 65vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/hero-cruise.png?raw=true");
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero div {
+    text-align: center;
+    color: white;
+}
+
+.hero h1, p {
+    margin-bottom: 10px;
+}
+
+.hero div button {
+    padding: 10px 20px 10px 20px;
+    background-color: rgba(242, 86, 5, 1);
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+main{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.heading {
+    border-left: 5px solid orange;
+    padding-left: 10px;
+    margin-top: 15px;
+}
+
+.heading h2, p {
+    margin-bottom: 10px
+}
+
+.popular {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pills img {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+
+.pills {
+    display: flex;
+    gap: 15px;
+}
+
+.pills div {
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    gap: 5px;
+}
+
+.banner {
+    height: 40vh;
+    margin-top: 15px;
+    position: relative;
+}
+
+.banner img:first-child {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.banner div {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    color: white;
+}
+
+.bookmark-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 20px;
+    height: 20px;
+
+    background-color: gray;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.cards {
+    display:grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.card {
+    /* height: 40vh; */
+    margin-top: 15px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.card h3 {
+    font-size: 15px;
+}
+
+.card p {
+    font-size: 12px
+}
+
+.card img:first-child {
+    height: 100%;
+    width: 100%;
+    object-fit: fill
+}
+
+.card div {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    color: white;
+}
+
+#contact {
+    text-align: center;
+    margin-top: 10px;
+}
+
+hr {
+    border: 2px solid orange;
+    width: 100px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.contact_info {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.contact_info div {
+    border: 1px solid grey;
+    width:50%
+    
+}
+
+footer {
+    background-color: rgb(0, 0, 51);
+    padding: 20px;
+}
+
+footer section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-icons img {
+    height: 25px;
+    width: 25px;
+}
+
+footer ul {
+    list-style: none;
+    color: white;
+    line-height: 30px;
+}
+
+footer h3 {
+    color:orange
+}
+
+.footer_rights{
+    text-align: center;
+    color: white;
+    border-top: 0.5px solid grey;
+    opacity: 0.5;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 25px;
+    }
+
+    .heading {
+        border: none;
+        text-align: center;
+    }
+
+    .pills span {
+        font-size: 10px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr) ;
+    }
+
+    .contact_info {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    footer section {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+        
+    .popular {
+        flex-direction: column;
+    }
+
+    .pills {
+        flex-direction: column;
+    }
+
+    .cards {
+        grid-template-columns: repeat(1, 1fr) ;
+    }
+}
